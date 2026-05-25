@@ -12,8 +12,8 @@ load_dotenv()
 # 是否启用通知功能
 ENABLE_NOTIFY=True
 
-# 通知类型,目前支持飞书(feishu),其他可参考飞书模板 template/feishu.json
-NOTIFY_TYPE='feishu'
+# 通知类型,目前支持飞书(feishu),钉钉(dingtalk),其他可参考飞书模板 template/feishu.json
+NOTIFY_TYPE='dingtalk'
 
 # 是否启用GPT功能进行漏洞分析
 ENABLE_GPT=True

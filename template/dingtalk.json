@@ -113,7 +113,7 @@
         "text": {
           "tag": "lark_md",
           "content": "**分析报告**: [查看报告]({gpt.git_url})"
-        } 
+        }
       }
     ]
   }
