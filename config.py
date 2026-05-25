@@ -19,7 +19,7 @@ NOTIFY_TYPE='feishu'
 ENABLE_GPT=True
 
 # GPT模型名称,使用Gemini 2.0 Flash版本
-GPT_MODEL='gemini-2.0-flash'
+GPT_MODEL='deepseek-ai/DeepSeek-V3'
 
 # 是否启用漏洞信息搜索功能，需启用GPT分析
 ENABLE_SEARCH=True
