@@ -96,7 +96,7 @@ class GPTAnalyzer:
         # 保留关键字段
         limited = {
             'id': cve_info.get('id', ''),
-            'summary': (cve_info.get('summary', '') or '')[:500],
+            'summary': (cve_info.get('summary', '') or '')[:],
             'cvss': cve_info.get('cvss', ''),
         }
         return json.dumps(limited, ensure_ascii=False)
@@ -366,8 +366,8 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
                 return data
             except json.JSONDecodeError as e2:
                 logger.error(f"JSON解析失败(清理后): {e2}")
-                logger.error(f"尝试解析的内容前500字符: {json_str[:500]}")
-                logger.error(f"原始响应前500字符: {content[:500]}")
+                logger.error(f"尝试解析的内容前字符: {json_str[:]}")
+                logger.error(f"原始响应前字符: {content[:]}")
                 return None
 
     def _quality_check(self, data: Dict) -> Tuple[bool, List[str]]:
@@ -379,7 +379,7 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
         2. 影响应用未知 ("Unknown")
         3. POC质量过低 (< 3分)
         4. 投毒风险过高 (> 70%)
-        5. 有效性分析过短 (< 500字符)
+        5. 有效性分析过短 (< 字符)
 
         Args:
             data: 解析后的数据字典
@@ -430,8 +430,8 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
 
         # 检查6: description长度
         description = data.get('description', '')
-        if len(description) < 500:
-            fail_reasons.append(f"有效性分析过短: {len(description)} 字符 (最少500字符)")
+        if len(description) < 300 :
+            fail_reasons.append(f"有效性分析过短: {len(description)} 字符 (最少300字符)")
 
         passed = len(fail_reasons) == 0
         if not passed:
