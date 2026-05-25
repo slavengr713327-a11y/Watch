@@ -114,6 +114,7 @@ def process_path(
     claude_xml,
     markdown,
     line_numbers=False,
+    silent=False,
 ):
     outputs = []
     if os.path.isfile(path):
@@ -121,8 +122,9 @@ def process_path(
             with open(path, "r") as f:
                 outputs.extend(print_path(path, f.read(), claude_xml, markdown, line_numbers))
         except UnicodeDecodeError:
-            warning_message = f"Warning: Skipping file {path} due to UnicodeDecodeError"
-            click.echo(click.style(warning_message, fg="red"), err=True)
+            if not silent:
+                warning_message = f"Warning: Skipping file {path} due to UnicodeDecodeError"
+                click.echo(click.style(warning_message, fg="red"), err=True)
     elif os.path.isdir(path):
         for root, dirs, files in os.walk(path):
             if not include_hidden:
@@ -170,10 +172,11 @@ def process_path(
                             line_numbers,
                         ))
                 except UnicodeDecodeError:
-                    warning_message = (
-                        f"Warning: Skipping file {file_path} due to UnicodeDecodeError"
-                    )
-                    click.echo(click.style(warning_message, fg="red"), err=True)
+                    if not silent:
+                        warning_message = (
+                            f"Warning: Skipping file {file_path} due to UnicodeDecodeError"
+                        )
+                        click.echo(click.style(warning_message, fg="red"), err=True)
     return outputs
 
 

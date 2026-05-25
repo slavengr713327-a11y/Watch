@@ -175,7 +175,8 @@ class GPTAnalyzer:
 
 分析CVE漏洞信息、POC代码和搜索结果，提取结构化数据。
 输出必须是纯JSON格式，不要任何额外文字、Markdown标记或注释。
-JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"""
+JSON中所有键和字符串值必须使用双引号，特殊字符需转义。
+**重要：除 CVE ID、URL、产品名等专有名词外，所有分析内容、描述和评估结果必须使用中文回答。**"""
 
         # 精简版 User Prompt (80行 vs 旧版300+行)
         user_prompt = f"""# 输入数据
@@ -191,7 +192,7 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
 
 # 输出要求
 
-提取以下15个字段的JSON数据：
+提取以下15个字段的JSON数据（**请务必使用中文进行详细描述和分析**）：
 
 ```json
 {{
@@ -199,7 +200,7 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
   "name": "CVE-YYYY-NNNNN-产品名-漏洞类型简述",
   "vulnerability_type": "漏洞类型(如:命令注入/SQL注入/XSS/RCE等)",
   "affected_product": "受影响的产品名称",
-  "severity": "危害等级描述",
+  "severity": "危害等级描述(如: 严重/高危/中危/低危)",
   "cvss_score": "CVSS评分(如: 9.8 或 CVSS:3.1/AV:N/AC:L/...)",
   "affected_versions": "受影响版本范围",
   "exploit_conditions": "利用条件(如:需要认证/需要网络访问等)",
@@ -207,7 +208,7 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
   "poc_type": "POC类型(完整利用/概念验证/仅说明/无代码)",
   "attack_complexity": "攻击复杂度(低/中/高)",
   "poisoning_risk": "投毒风险百分比(如: 10%)",
-  "description": "详细描述(400-600字,包含POC有效性分析、利用步骤、投毒风险分析)",
+  "description": "详细描述(400-600字,使用中文,包含POC有效性分析、利用步骤、投毒风险分析)",
   "repository_url": "POC项目地址",
   "cve_details_url": "CVE详情链接(如: https://nvd.nist.gov/vuln/detail/CVE-YYYY-NNNNN)"
 }}

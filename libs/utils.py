@@ -522,6 +522,9 @@ def get_github_poc(github_link: str) -> str:
             '*.lib',
             '*.bin',
             '*.dat',
+            '*.db',
+            '*.sqlite',
+            'gogs.db',
 
             # 其他无用文件
             '*.log',
@@ -530,6 +533,10 @@ def get_github_poc(github_link: str) -> str:
             '*.swp',
             '*.DS_Store',
             'Thumbs.db',
+            'gogs-data/*',
+            'data/gogs/*',
+            'data/sessions/*',
+            'git/gogs-repositories/*',
         ]
 
         outputs = process_path(
@@ -542,7 +549,8 @@ def get_github_poc(github_link: str) -> str:
             ignore_patterns=ignore_patterns,  # 使用智能忽略模式
             claude_xml=False,
             markdown=False,
-            line_numbers=False
+            line_numbers=False,
+            silent=True  # 静默模式，不输出 UnicodeDecodeError 警告
         )
 
         logger.info(f"成功提取POC代码: {len(outputs)} 行 (已过滤无关文件)")
