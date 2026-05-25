@@ -473,8 +473,8 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
 
         # 检查6: description长度
         description = data.get('description', '')
-        if len(description) < 200 :
-            fail_reasons.append(f"有效性分析过短: {len(description)} 字符 (最少200字符)")
+        if len(description) < 150 :
+            fail_reasons.append(f"有效性分析过短: {len(description)} 字符 (最少150字符)")
 
         passed = len(fail_reasons) == 0
         if not passed:

@@ -95,6 +95,10 @@ def _convert_feishu_card_to_dingtalk_markdown(feishu_card_json):
     将飞书卡片JSON转换为钉钉Markdown格式文本。
     增加了颜色表情和更好的排版。
     """
+    if not isinstance(feishu_card_json, dict):
+        logger.error(f"feishu_card_json 不是字典类型 ({type(feishu_card_json)})，无法转换。内容: {str(feishu_card_json)[:200]}...")
+        return str(feishu_card_json)
+
     markdown_text = ""
 
     # 提取标题

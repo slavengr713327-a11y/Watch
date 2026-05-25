@@ -294,16 +294,19 @@ def process_cve(cve_id: str, repo: Dict, engine, notified_cves_today: set) -> Di
         push_today = today == repo_date
 
         # 只有GPT分析成功且当天推送才发送通知
-        if enable_notify and push_today and gpt_results:
+        if enable_notify and gpt_results:
+            if not push_today:
+                logger.info(f"⊘ 仓库推送时间非今日,跳过通知: {repo_link} (Push: {repo_date}, Today: {today})")
             # 检查1: 仓库更新推送开关
-            if action_log == 'update' and not enable_update_notify:
+            elif action_log == 'update' and not enable_update_notify:
                 logger.info(f"⊘ 仓库更新不推送通知 (ENABLE_UPDATE_NOTIFY=False): {repo_link}")
             # 检查2: CVE去重开关
             elif enable_cve_dedup and cve_id in notified_cves_today:
                 logger.info(f"⊘ CVE今日已推送,跳过重复推送 (ENABLE_CVE_DEDUP=True): {cve_id}")
             # 通过所有检查,发送通知
             else:
-                logger.info(f"✓ 发送飞书通知: {cve_id} ({action_log})")
+                notify_type_name = "钉钉" if get_config('NOTIFY_TYPE') == 'dingtalk' else "飞书"
+                logger.info(f"✓ 发送{notify_type_name}通知: {cve_id} ({action_log})")
                 send_webhook(result)
                 # 记录已推送的CVE
                 if enable_cve_dedup:
@@ -311,6 +314,9 @@ def process_cve(cve_id: str, repo: Dict, engine, notified_cves_today: set) -> Di
                     logger.debug(f"已推送CVE列表更新: {len(notified_cves_today)} 个CVE")
         elif enable_notify and push_today and not gpt_results:
             logger.warning(f"GPT分析失败，跳过通知推送: {repo_link}")
+        elif not enable_notify:
+            logger.debug(f"通知功能未启用，跳过推送: {cve_id}")
+            
         return result
 
     except Exception as e:
