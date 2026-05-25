@@ -1,6 +1,6 @@
 # 2026年 CVE漏洞列表
 
-> 📊 共收录 **169** 个CVE漏洞
+> 📊 共收录 **170** 个CVE漏洞
 
 ---
 
@@ -176,6 +176,7 @@
 | [CVE-2026-43494](CVE-2026-43494-Koshmare-Blossom_PinTheft-go.md) | CVE-2026-43494 - Linux内核 本地提权 | ⚪ 严重 | 3 |
 | [CVE-2026-43494](CVE-2026-43494-jayhutajulu1_CVE-2026-43494-PinTheft-PoC.md) | CVE-2026-43494 - Linux内核 本地提权 | ⚪ 严重 | 3 |
 | [CVE-2026-47101](CVE-2026-47101-learner202649_CVE-2026-47101-PoC.md) | CVE-2026-47101 - LiteLLM 权限提升 | ⚪ 高危 | 1 |
+| [CVE-2026-47102](CVE-2026-47102-learner202649_CVE-2026-47102-PoC.md) | CVE-2026-47102 - LiteLLM 权限提升 | ⚪ 高危 | 1 |
 | [CVE-2026-9256](CVE-2026-9256-suominen_CVE-2026-9256.md) | CVE-2026-9256 - NGINX Open Source和NGINX Plus 堆缓冲区溢出 | ⚪ 高危 | 1 |
 
 ---
