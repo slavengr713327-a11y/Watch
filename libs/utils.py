@@ -588,3 +588,52 @@ def write_to_markdown(data: Dict, filename: str):
     content = template.format(**data)
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(content)
+
+def git_push_file(file_path: str, commit_message: str):
+    """
+    自动提交并推送文件到 Git 仓库
+    支持 GitHub Actions 环境下的自动认证
+    """
+    try:
+        # 检测是否在 GitHub Actions 环境
+        is_github_actions = os.environ.get('GITHUB_ACTIONS') == 'true'
+        github_token = os.environ.get('GITHUB_TOKEN') or get_config('GITHUB_TOKEN')
+
+        if is_github_actions:
+            logger.info("检测到 GitHub Actions 环境，配置 Git 身份信息...")
+            # 配置 Git 用户身份
+            subprocess.run(['git', 'config', '--local', 'user.email', 'github-actions[bot]@users.noreply.github.com'], check=True)
+            subprocess.run(['git', 'config', '--local', 'user.name', 'github-actions[bot]'], check=True)
+            
+            # 如果有 Token，配置带认证的远程 URL
+            if github_token:
+                repo_uri = os.environ.get('GITHUB_REPOSITORY')
+                if repo_uri:
+                    remote_url = f"https://x-access-token:{github_token}@github.com/{repo_uri}.git"
+                    subprocess.run(['git', 'remote', 'set-url', 'origin', remote_url], check=True)
+
+        # 1. Git Add
+        logger.info(f"Git Add: {file_path}")
+        subprocess.run(['git', 'add', file_path], check=True, capture_output=True)
+
+        # 2. Git Commit
+        logger.info(f"Git Commit: {commit_message}")
+        # 允许 commit 失败（如果没有变化）
+        result = subprocess.run(['git', 'commit', '-m', commit_message], capture_output=True)
+        if result.returncode != 0 and "nothing to commit" not in result.stdout.decode() and "nothing to commit" not in result.stderr.decode():
+             logger.error(f"Git Commit 失败: {result.stderr.decode()}")
+             return False
+
+        # 3. Git Push
+        logger.info("Git Push...")
+        # 尝试推送到远程仓库
+        subprocess.run(['git', 'push'], check=True, capture_output=True, timeout=30)
+        logger.info("✓ Git 推送成功")
+        return True
+    except subprocess.CalledProcessError as e:
+        error_msg = e.stderr.decode() if e.stderr else str(e)
+        logger.error(f"✗ Git 操作失败: {error_msg}")
+        return False
+    except Exception as e:
+        logger.error(f"✗ Git 操作异常: {e}")
+        return False

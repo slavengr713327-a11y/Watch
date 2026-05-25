@@ -4,7 +4,7 @@ import os
 import time
 import traceback
 from config import get_config
-from libs.utils import search_github, get_cve_info, ask_gpt, search_searxng, get_github_poc, write_to_markdown, get_latest_commit_sha
+from libs.utils import search_github, get_cve_info, ask_gpt, search_searxng, get_github_poc, write_to_markdown, get_latest_commit_sha, git_push_file
 from libs.webhook import send_webhook
 from libs.gpt_analyzer import GPTAnalyzer  # 新增: GPT分析器
 from libs.blacklist_manager import BlacklistManager  # 新增: 黑名单管理器
@@ -187,6 +187,12 @@ def process_cve(cve_id: str, repo: Dict, engine, notified_cves_today: set) -> Di
                 # 直接写入 Markdown (GPTAnalyzer 已经生成好了)
                 with open(filepath, 'w', encoding='utf-8') as f:
                     f.write(analyzer_result['markdown'])
+
+                # 自动推送到仓库 (新增)
+                if git_push_file(filepath, f"docs: add analysis report for {cve_id} ({repo_full_name})"):
+                    logger.info(f"✓ 报告已同步到仓库: {filepath}")
+                else:
+                    logger.warning(f"✗ 报告同步到仓库失败: {filepath}")
 
                 # 构建 gpt_results 用于向后兼容
                 data = analyzer_result['data']
