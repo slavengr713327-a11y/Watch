@@ -65,6 +65,7 @@ def get_config(env: str):
         'MAX_CVE_INFO_CHARS': int(os.environ.get('MAX_CVE_INFO_CHARS', '1000')),
         'MAX_SEARCH_CHARS': int(os.environ.get('MAX_SEARCH_CHARS', '2000')),
         'MAX_POC_CODE_CHARS': int(os.environ.get('MAX_POC_CODE_CHARS', '3000')),
+        'MAX_RESPONSE_TOKENS': int(os.environ.get('MAX_RESPONSE_TOKENS', '2048')),
         'MAX_PROMPT_CHARS': int(os.environ.get('MAX_PROMPT_CHARS', '24000')),
         # 搜索配置
         'ENABLE_SEARCH': ENABLE_SEARCH,

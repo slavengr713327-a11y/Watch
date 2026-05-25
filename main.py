@@ -44,7 +44,8 @@ if enable_gpt:
             model=get_config('GPT_MODEL'),
             max_cve_info_chars=get_config('MAX_CVE_INFO_CHARS'),
             max_search_chars=get_config('MAX_SEARCH_CHARS'),
-            max_poc_code_chars=get_config('MAX_POC_CODE_CHARS')
+            max_poc_code_chars=get_config('MAX_POC_CODE_CHARS'),
+            max_response_tokens=get_config('MAX_RESPONSE_TOKENS')
         )
         logger.info("✓ GPT分析器初始化成功")
     except ValueError as e:

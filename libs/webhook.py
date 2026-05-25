@@ -93,42 +93,48 @@ def parse_webhook_data(webhook_data, data):
 def _convert_feishu_card_to_dingtalk_markdown(feishu_card_json):
     """
     将飞书卡片JSON转换为钉钉Markdown格式文本。
-    这是一个启发式转换，旨在尽可能保持样式一致。
+    增加了颜色表情和更好的排版。
     """
     markdown_text = ""
 
     # 提取标题
     title = feishu_card_json.get('card', {}).get('header', {}).get('title', {}).get('content', '漏洞通知')
-    markdown_text += f"## {title}\n\n" # DingTalk requires \n for newlines in markdown content
+    
+    # 根据标题内容或header template判断颜色表情
+    header_template = feishu_card_json.get('card', {}).get('header', {}).get('template', '')
+    status_emoji = "🛡️"
+    if header_template == 'red' or '高危' in title or '严重' in title:
+        status_emoji = "🔴"
+    elif header_template == 'orange' or '中危' in title:
+        status_emoji = "🟠"
+    elif header_template == 'green' or '低危' in title:
+        status_emoji = "🟢"
+
+    markdown_text += f"# {status_emoji} {title}\n\n"
 
     elements = feishu_card_json.get('card', {}).get('elements', [])
     for element in elements:
         tag = element.get('tag')
         if tag == 'div':
             if 'text' in element and element['text'].get('tag') == 'lark_md':
-                # 处理文本内容，尝试转换Feishu的lark_md到DingTalk markdown
                 content = element['text']['content']
-                # Feishu lark_md to DingTalk markdown basic conversion
-                content = content.replace('**', '**') # Bold
-                content = content.replace('*', '*')   # Italic (if any, though Feishu uses **)
-                content = content.replace('[', '[').replace(']', ']') # Links
-                content = content.replace('(', '(').replace(')', ')')
-                markdown_text += content + "\n"
+                # 转换飞书的换行符
+                content = content.replace('\n', '  \n')
+                markdown_text += content + "\n\n"
             elif 'fields' in element:
-                # 处理字段，例如两列布局
-                field_texts = []
+                # 处理并排字段
                 for field in element['fields']:
                     if 'text' in field and field['text'].get('tag') == 'lark_md':
                         field_content = field['text']['content']
-                        field_content = field_content.replace('**', '**')
-                        field_content = field_content.replace('[', '[').replace(']', ']')
-                        field_content = field_content.replace('(', '(').replace(')', ')')
-                        field_texts.append(field_content)
-                if field_texts:
-                    # 尝试并排显示，或每行一个
-                    markdown_text += " ".join(field_texts) + "\n"
+                        # 转换换行符并加粗标题部分
+                        if '\n' in field_content:
+                            f_title, f_val = field_content.split('\n', 1)
+                            markdown_text += f"{f_title} {f_val}  \n"
+                        else:
+                            markdown_text += f"{field_content}  \n"
+                markdown_text += "\n"
         elif tag == 'hr':
-            markdown_text += "---\n" # Horizontal rule
+            markdown_text += "---\n\n"
 
     return markdown_text
 

@@ -54,7 +54,8 @@ class GPTAnalyzer:
                  model: Optional[str] = None,
                  max_cve_info_chars: int = 1000,
                  max_search_chars: int = 2000,
-                 max_poc_code_chars: int = 3000):
+                 max_poc_code_chars: int = 3000,
+                 max_response_tokens: int = 2048):
         """
         初始化 GPT 分析器
 
@@ -65,6 +66,7 @@ class GPTAnalyzer:
             max_cve_info_chars: CVE信息最大字符数
             max_search_chars: 搜索结果最大字符数
             max_poc_code_chars: POC代码最大字符数
+            max_response_tokens: GPT 响应最大 Token 数
         """
         self.api_key = api_key or os.getenv('GPT_API_KEY')
         self.api_url = api_url or os.getenv('GPT_SERVER_URL')
@@ -73,6 +75,7 @@ class GPTAnalyzer:
         self.max_cve_info = max_cve_info_chars
         self.max_search = max_search_chars
         self.max_poc_code = max_poc_code_chars
+        self.max_response_tokens = max_response_tokens
 
         if not self.api_key:
             raise ValueError("GPT_API_KEY 未设置")
@@ -204,7 +207,7 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
   "poc_type": "POC类型(完整利用/概念验证/仅说明/无代码)",
   "attack_complexity": "攻击复杂度(低/中/高)",
   "poisoning_risk": "投毒风险百分比(如: 10%)",
-  "description": "详细描述(600-1000字,包含POC有效性分析、利用步骤、投毒风险分析)",
+  "description": "详细描述(400-600字,包含POC有效性分析、利用步骤、投毒风险分析)",
   "repository_url": "POC项目地址",
   "cve_details_url": "CVE详情链接(如: https://nvd.nist.gov/vuln/detail/CVE-YYYY-NNNNN)"
 }}
@@ -231,7 +234,7 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
 
 ## 字段说明
 - **name**: 简洁的漏洞标题，格式: CVE编号-产品名-漏洞类型，例如: "CVE-2024-12345-WordPress-命令注入"
-- **description**: 必须包含POC有效性分析(600-1000字)、利用步骤、投毒风险分析(400-600字)
+- **description**: 必须包含POC有效性分析(300-500字)、利用步骤、投毒风险分析 (总计300-500字)
 
 ## 注意事项
 - 务必不要把POC验证的后门代码判定为投毒代码
@@ -266,7 +269,9 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
-            ]
+            ],
+            "max_tokens": self.max_response_tokens,
+            "temperature": 0.3  # 降低随机性，使输出更稳定
         }
 
         try:
@@ -332,6 +337,35 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
         # 策略4: 原始内容去除首尾空白
         return content.strip()
 
+    def _repair_json(self, json_str: str) -> str:
+        """
+        尝试修复截断的 JSON 字符串
+        """
+        json_str = json_str.strip()
+        if not json_str:
+            return ""
+
+        # 如果 JSON 已经完整，直接返回
+        try:
+            json.loads(json_str)
+            return json_str
+        except:
+            pass
+
+        # 补全缺失的引号
+        if json_str.count('"') % 2 != 0:
+            json_str += '"'
+
+        # 补全缺失的括号
+        open_braces = json_str.count('{')
+        close_braces = json_str.count('}')
+        if open_braces > close_braces:
+            # 如果最后是一个逗号，先移除
+            json_str = json_str.rstrip().rstrip(',')
+            json_str += '}' * (open_braces - close_braces)
+
+        return json_str
+
     def _parse_response(self, content: str) -> Optional[Dict]:
         """
         解析GPT响应
@@ -348,27 +382,36 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
             logger.error("无法从响应中提取JSON")
             return None
 
-        # 解析JSON
+        # 策略1: 直接尝试解析
         try:
-            # 尝试使用strict=False来容忍控制字符
             data = json.loads(json_str, strict=False)
             logger.info(f"JSON解析成功 - 字段数: {len(data)}")
             return data
         except json.JSONDecodeError as e:
-            logger.warning(f"JSON解析失败(strict=False): {e}")
+            logger.warning(f"初次解析失败: {e}")
 
-            # 尝试清理JSON字符串中的控制字符
+            # 策略2: 尝试修复截断的 JSON
+            repaired_json = self._repair_json(json_str)
             try:
-                # 替换非法的控制字符
-                cleaned_json = json_str.replace('\n', '\\n').replace('\r', '\\r').replace('\t', '\\t')
-                data = json.loads(cleaned_json)
-                logger.info(f"JSON解析成功(清理后) - 字段数: {len(data)}")
+                data = json.loads(repaired_json, strict=False)
+                logger.info(f"JSON解析成功(修复后) - 字段数: {len(data)}")
                 return data
             except json.JSONDecodeError as e2:
-                logger.error(f"JSON解析失败(清理后): {e2}")
-                logger.error(f"尝试解析的内容前字符: {json_str[:]}")
-                logger.error(f"原始响应前字符: {content[:]}")
-                return None
+                logger.warning(f"修复后解析仍失败: {e2}")
+
+                # 策略3: 尝试清理控制字符
+                try:
+                    # 替换非法的控制字符，但不破坏已有的转义
+                    cleaned_json = json_str.replace('\n', '\\n').replace('\r', '\\r').replace('\t', '\\t')
+                    # 再次尝试修复
+                    cleaned_repaired = self._repair_json(cleaned_json)
+                    data = json.loads(cleaned_repaired, strict=False)
+                    logger.info(f"JSON解析成功(清理并修复后) - 字段数: {len(data)}")
+                    return data
+                except json.JSONDecodeError as e3:
+                    logger.error(f"所有解析尝试均失败")
+                    logger.error(f"最后尝试的内容: {json_str[:200]}...{json_str[-200:]}")
+                    return None
 
     def _quality_check(self, data: Dict) -> Tuple[bool, List[str]]:
         """
@@ -430,8 +473,8 @@ JSON中所有键和字符串值必须使用双引号，特殊字符需转义。"
 
         # 检查6: description长度
         description = data.get('description', '')
-        if len(description) < 300 :
-            fail_reasons.append(f"有效性分析过短: {len(description)} 字符 (最少300字符)")
+        if len(description) < 200 :
+            fail_reasons.append(f"有效性分析过短: {len(description)} 字符 (最少200字符)")
 
         passed = len(fail_reasons) == 0
         if not passed:

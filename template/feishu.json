@@ -16,7 +16,7 @@
         "tag": "div",
         "text": {
           "tag": "lark_md",
-          "content": "**CVE编号**: [{gpt.cve_id}]({gpt.cve_url})"
+          "content": "**CVE编号**: [{gpt.cve_id}]({gpt.cve_url})\n**漏洞名称**: {gpt.name}"
         }
       },
       {
@@ -26,14 +26,14 @@
             "is_short": true,
             "text": {
               "tag": "lark_md",
-              "content": "**漏洞类型**\n{gpt.type}"
+              "content": "**漏洞类型**\n{gpt.vulnerability_type}"
             }
           },
           {
             "is_short": true,
             "text": {
               "tag": "lark_md",
-              "content": "**受影响应用**\n{gpt.app}"
+              "content": "**危害等级**\n{gpt.severity}"
             }
           }
         ]
@@ -45,14 +45,14 @@
             "is_short": true,
             "text": {
               "tag": "lark_md",
-              "content": "**风险等级**\n{gpt.risk}"
+              "content": "**影响产品**\n{gpt.affected_product}"
             }
           },
           {
             "is_short": true,
             "text": {
               "tag": "lark_md",
-              "content": "**受影响版本**\n{gpt.version}"
+              "content": "**影响版本**\n{gpt.affected_versions}"
             }
           }
         ]
@@ -64,36 +64,34 @@
             "is_short": true,
             "text": {
               "tag": "lark_md",
-              "content": "**利用条件**\n{gpt.condition}"
+              "content": "**POC评分**\n{gpt.poc_quality}"
             }
           },
           {
             "is_short": true,
             "text": {
               "tag": "lark_md",
-              "content": "**POC可用性**\n{gpt.poc_available}"
+              "content": "**投毒风险**\n{gpt.poisoning_risk}"
             }
           }
         ]
       },
       {
         "tag": "div",
-        "fields": [
-          {
-            "is_short": true,
-            "text": {
-              "tag": "lark_md",
-              "content": "**投毒风险**\n{gpt.poison}"
-            }
-          },
-          {
-            "is_short": true,
-            "text": {
-              "tag": "lark_md",
-              "content": "**操作日志**\n{gpt.action_log}"
-            }
-          }
-        ]
+        "text": {
+          "tag": "lark_md",
+          "content": "**利用条件**: {gpt.exploit_conditions}\n**攻击复杂度**: {gpt.attack_complexity}"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**漏洞简述**:\n{gpt.description}"
+        }
       },
       {
         "tag": "hr"
