@@ -201,7 +201,8 @@ def process_cve(cve_id: str, repo: Dict, engine, notified_cves_today: set) -> Di
                     'repo_name': repo_full_name,
                     'repo_url': repo_link,
                     'cve_url': f"https://nvd.nist.gov/vuln/detail/{cve_id}",
-                    'action_log': '新增' if action_log == 'new' else '更新',
+                    'action_log': '🆕 新增仓库' if action_log == 'new' else '🔄 仓库更新',
+                    'pushed_at': datetime.strptime(repo_pushed_at, '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=timezone.utc).astimezone(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S'),
                     'git_url': f"{get_config('GIT_URL')}/blob/main/{filepath}" if get_config('GIT_URL') else '',
 
                     # 添加15字段原始数据

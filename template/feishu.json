@@ -16,7 +16,7 @@
         "tag": "div",
         "text": {
           "tag": "lark_md",
-          "content": "**CVE编号**: [{gpt.cve_id}]({gpt.cve_url})\n**漏洞名称**: {gpt.name}"
+          "content": "**状态**: {gpt.action_log} | **推送时间**: {gpt.pushed_at}\n**CVE编号**: [{gpt.cve_id}]({gpt.cve_url})\n**漏洞名称**: {gpt.name}"
         }
       },
       {
