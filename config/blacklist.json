@@ -1,8 +1,8 @@
 {
   "$schema": "blacklist-schema.json",
-  "version": "1.0.0",
-  "last_updated": "2026-03-24T14:14:10.072995Z",
-  "description": "VulnWatchdog 黑名单配置文件 - 用于过滤低质量POC和恶意仓库",
+  "version": "1.0.1",
+  "last_updated": "2026-05-25T10:00:00Z",
+  "description": "VulnWatchdog 黑名单配置文件 - 已更新 2026 WebRAT 与 TeamPCP 供应链攻击投毒账号",
   "settings": {
     "auto_blacklist_enabled": true,
     "auto_blacklist_thresholds": {
@@ -15,6 +15,62 @@
   },
   "blacklist": {
     "authors": [
+      {
+        "username": "hackerbot-claw",
+        "reason": "参与2026年3月Trivy供应链攻击 (CVE-2026-33634)",
+        "added_date": "2026-05-25",
+        "added_by": "manual",
+        "notes": "利用pull_request_target漏洞窃取Token并投毒知名安全工具"
+      },
+      {
+        "username": "RedFoxNxploits",
+        "reason": "WebRAT恶意软件传播账号 - 伪造CVE-2025 POC",
+        "added_date": "2026-05-25",
+        "added_by": "manual",
+        "notes": "分发加密ZIP文件,包含WebRAT木马 (C2: ezc5510min.temp.swtest.ru)"
+      },
+      {
+        "username": "FixingPhantom",
+        "reason": "WebRAT恶意软件传播账号 - 伪造CVE-2025 POC",
+        "added_date": "2026-05-25",
+        "added_by": "manual",
+        "notes": "分发伪造的CVE-2025-59295/10294等漏洞利用程序"
+      },
+      {
+        "username": "h4xnz",
+        "reason": "WebRAT恶意软件传播账号 - 伪造CVE-2025 POC",
+        "added_date": "2026-05-25",
+        "added_by": "manual",
+        "notes": "卡巴斯基披露的15个恶意仓库关联账号之一"
+      },
+      {
+        "username": "stalker110119",
+        "reason": "WebRAT恶意软件传播账号 - 伪造CVE-2025 POC",
+        "added_date": "2026-05-25",
+        "added_by": "manual",
+        "notes": "利用AI生成的专业README诱骗下载恶意POC"
+      },
+      {
+        "username": "moegameka",
+        "reason": "WebRAT恶意软件传播账号 - 伪造CVE-2025 POC",
+        "added_date": "2026-05-25",
+        "added_by": "manual",
+        "notes": "分发包含WebRAT后门的伪造POC压缩包"
+      },
+      {
+        "username": "DebugFrag",
+        "reason": "WebRAT恶意软件传播账号 - 伪造CVE-2025 POC",
+        "added_date": "2026-05-25",
+        "added_by": "manual",
+        "notes": "卡巴斯基2025年12月披露的恶意投毒账号"
+      },
+      {
+        "username": "TeamPCP",
+        "reason": "知名供应链攻击团伙关联账号",
+        "added_date": "2026-05-25",
+        "added_by": "manual",
+        "notes": "2026年3月大规模GitHub供应链攻击 (Trivy, Checkmarx, LiteLLM) 幕后黑手"
+      },
       {
         "username": "example-bad-author",
         "reason": "持续提交低质量POC",
@@ -1789,8 +1845,8 @@
     "repositories": []
   },
   "statistics": {
-    "total_blocked": 1587,
-    "blocked_by_author": 1586,
+    "total_blocked": 1595,
+    "blocked_by_author": 1594,
     "blocked_by_repository": 1,
     "blocked_by_cve": 0,
     "auto_blacklisted_authors": 173,
