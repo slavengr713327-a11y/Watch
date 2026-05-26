@@ -31,10 +31,17 @@ jobs:
           DEBUG: ${{ secrets.DEBUG }}
           NOTIFY_TYPE: ${{ secrets.NOTIFY_TYPE }}
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          ENABLE_NOTIFY: ${{ secrets.ENABLE_NOTIFY }}
+          ENABLE_GPT: ${{ secrets.ENABLE_GPT }}
+          ENABLE_SEARCH: ${{ secrets.ENABLE_SEARCH }}
+          ENABLE_EXTENDED: ${{ secrets.ENABLE_EXTENDED }}
+          ENABLE_UPDATE_CHECK: ${{ secrets.ENABLE_UPDATE_CHECK }}
+          ENABLE_CVE_DEDUP: ${{ secrets.ENABLE_CVE_DEDUP }}
+          ENABLE_UPDATE_NOTIFY: ${{ secrets.ENABLE_UPDATE_NOTIFY }}
           GPT_SERVER_URL: ${{ secrets.GPT_SERVER_URL }}
           GPT_API_KEY: ${{ secrets.GPT_API_KEY }}
           GPT_MODEL: ${{ secrets.GPT_MODEL }}
-          SEARXNG_URL: ${{ secrets.SEARXNG_URL }}
+          SEARXNG_URLS: ${{ secrets.SEARXNG_URLS }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_URL: https://github.com/${{ github.repository }}
