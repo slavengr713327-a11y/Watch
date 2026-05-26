@@ -60,11 +60,11 @@ def get_config(env: str):
     config = {
         "DEBUG": 'DEBUG' if os.environ.get('DEBUG', str(DEBUG)).lower() == 'true' else 'INFO',
         # 通知配置
-        'ENABLE_NOTIFY': to_bool(os.environ.get('ENABLE_NOTIFY', ENABLE_NOTIFY)),
+        'ENABLE_NOTIFY': to_bool(os.environ.get('ENABLE_NOTIFY')) if os.environ.get('ENABLE_NOTIFY') is not None and os.environ.get('ENABLE_NOTIFY') != '' else ENABLE_NOTIFY,
         'NOTIFY_TYPE': os.environ.get('NOTIFY_TYPE') if os.environ.get('NOTIFY_TYPE') else NOTIFY_TYPE,
         'WEBHOOK_URL': os.environ.get('WEBHOOK_URL'),
         # GPT配置
-        'ENABLE_GPT': to_bool(os.environ.get('ENABLE_GPT', ENABLE_GPT)),
+        'ENABLE_GPT': to_bool(os.environ.get('ENABLE_GPT')) if os.environ.get('ENABLE_GPT') is not None and os.environ.get('ENABLE_GPT') != '' else ENABLE_GPT,
         'GPT_SERVER_URL': os.environ.get('GPT_SERVER_URL'),
         'GPT_API_KEY': os.environ.get('GPT_API_KEY'),
         'GPT_MODEL': os.environ.get('GPT_MODEL') if os.environ.get('GPT_MODEL') else GPT_MODEL,
@@ -75,19 +75,19 @@ def get_config(env: str):
         'MAX_RESPONSE_TOKENS': int(os.environ.get('MAX_RESPONSE_TOKENS', '2048')),
         'MAX_PROMPT_CHARS': int(os.environ.get('MAX_PROMPT_CHARS', '24000')),
         # 搜索配置
-        'ENABLE_SEARCH': to_bool(os.environ.get('ENABLE_SEARCH', ENABLE_SEARCH)),
+        'ENABLE_SEARCH': to_bool(os.environ.get('ENABLE_SEARCH')) if os.environ.get('ENABLE_SEARCH') is not None and os.environ.get('ENABLE_SEARCH') != '' else ENABLE_SEARCH,
         'SEARXNG_URL': os.environ.get('SEARXNG_URL'),  # 旧版单引擎配置 (已废弃)
         'SEARXNG_URLS': os.environ.get('SEARXNG_URLS'),  # 新版多引擎配置 (逗号分隔)
         # 数据库配置
         'DB_URL': os.environ.get('DB_URL', DB_URL),
         # 扩展搜索配置
-        'ENABLE_EXTENDED': to_bool(os.environ.get('ENABLE_EXTENDED', ENABLE_EXTENDED)),
+        'ENABLE_EXTENDED': to_bool(os.environ.get('ENABLE_EXTENDED')) if os.environ.get('ENABLE_EXTENDED') is not None and os.environ.get('ENABLE_EXTENDED') != '' else ENABLE_EXTENDED,
         # 更新检测配置
-        'ENABLE_UPDATE_CHECK': to_bool(os.environ.get('ENABLE_UPDATE_CHECK', ENABLE_UPDATE_CHECK)),
+        'ENABLE_UPDATE_CHECK': to_bool(os.environ.get('ENABLE_UPDATE_CHECK')) if os.environ.get('ENABLE_UPDATE_CHECK') is not None and os.environ.get('ENABLE_UPDATE_CHECK') != '' else ENABLE_UPDATE_CHECK,
         # CVE去重推送配置
-        'ENABLE_CVE_DEDUP': to_bool(os.environ.get('ENABLE_CVE_DEDUP', ENABLE_CVE_DEDUP)),
+        'ENABLE_CVE_DEDUP': to_bool(os.environ.get('ENABLE_CVE_DEDUP')) if os.environ.get('ENABLE_CVE_DEDUP') is not None and os.environ.get('ENABLE_CVE_DEDUP') != '' else ENABLE_CVE_DEDUP,
         # 仓库更新推送配置
-        'ENABLE_UPDATE_NOTIFY': to_bool(os.environ.get('ENABLE_UPDATE_NOTIFY', ENABLE_UPDATE_NOTIFY)),
+        'ENABLE_UPDATE_NOTIFY': to_bool(os.environ.get('ENABLE_UPDATE_NOTIFY')) if os.environ.get('ENABLE_UPDATE_NOTIFY') is not None and os.environ.get('ENABLE_UPDATE_NOTIFY') != '' else ENABLE_UPDATE_NOTIFY,
         # GitHub配置 (优先使用 GH_TOKEN，其次 GITHUB_TOKEN)
         'GITHUB_TOKEN': os.environ.get('GH_TOKEN') or os.environ.get('GITHUB_TOKEN') or GITHUB_TOKEN,
         # 仓库地址
