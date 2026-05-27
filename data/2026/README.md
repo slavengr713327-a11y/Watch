@@ -1,6 +1,6 @@
 # 2026年 CVE漏洞列表
 
-> 📊 共收录 **235** 个CVE漏洞
+> 📊 共收录 **240** 个CVE漏洞
 
 ---
 
@@ -8,23 +8,27 @@
 
 | CVE编号 | 标题 | 严重程度 | POC仓库数 |
 |---------|------|----------|-----------|
-| [CVE-2026-0073](CVE-2026-0073-0xBlackash_CVE-2026-0073.md) | CVE-2026-0073 - Android adbd组件 认证绕过→远程代码执行 | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-0xbinder_CVE-2026-0073.md) | CVE-2026-0073 - Android RCE | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-ByteWraith1_CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/RCE | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-CryptReaper12_CVE-2026-0073.md) | CVE-2026-0073 - Android 远程代码执行(RCE) | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-0xBlackash_CVE-2026-0073.md) | CVE-2026-0073 - Android 认证绕过/RCE | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-0xbinder_CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-ByteWraith1_CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 远程代码执行 | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-CryptReaper12_CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 严重 | 15 |
 | [CVE-2026-0073](CVE-2026-0073-MartinPSDev_CVE-2026-0073-Android-ADBD-bypass-POC.md) | CVE-2026-0073 - Android ADB daemon (adbd) 认证绕过 | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-SecTestAnnaQuinn_CVE-2026-0073-Android-adbd-authentication-bypass-POC.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/RCE | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-SecTestAnnaQuinn_CVE-2026-0073-Android-adbd-authentication-bypass-POC.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 高危 | 15 |
 | [CVE-2026-0073](CVE-2026-0073-adityatelange_poc-CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/RCE | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-devtint_CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge daemon (adbd) 认证绕过 | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-m00ddy_CVE-2026-0073-Android-client-TLS-auth-bypass.md) | CVE-2026-0073 - 安卓调试桥(adbd) 远程代码执行 | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-novaek_CVE-2026-0073-Research.md) | CVE-2026-0073 - 安卓调试桥(adbd) 远程代码执行 | ⚪ 高危 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-devtint_CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-m00ddy_CVE-2026-0073-Android-client-TLS-auth-bypass.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/RCE | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-novaek_CVE-2026-0073-Research.md) | CVE-2026-0073 - Android 认证绕过/远程代码执行 | ⚪ 高危 | 15 |
 | [CVE-2026-0073](CVE-2026-0073-ridhinva_CVE-2026-0073-ADBD-Bypass.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-tc4dy_CVE-2026-0073-PoC-Exploit.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/RCE | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-tc4dy_CVE-2026-0073-PoC-Exploit.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 严重 | 15 |
 | [CVE-2026-0073](CVE-2026-0073-thakur2309_CVE-2026-0073-ZERO-CLICK.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 高危 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-unnaim_adbHijacker.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 严重 | 15 |
-| [CVE-2026-0073](CVE-2026-0073-xqi1337_poc-CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/RCE | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-unnaim_adbHijacker.md) | CVE-2026-0073 - Android 认证绕过 | ⚪ 严重 | 15 |
+| [CVE-2026-0073](CVE-2026-0073-xqi1337_poc-CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 严重 | 15 |
 | [CVE-2026-0628](CVE-2026-0628-fevar54_CVE-2026-0628-POC.md) | CVE-2026-0628 - Google Chrome (WebView组件) 权限绕过/脚本注入 | ⚪ 高 (High) | 1 |
 | [CVE-2026-0770](CVE-2026-0770-affix_CVE-2026-0770-PoC.md) | CVE-2026-0770 - Langflow 远程代码执行 (RCE) | ⚪ 关键 (Critical) | 1 |
+| [CVE-2026-0828](CVE-2026-0828-DeathShotXD_0xKern3lCrush.md) | CVE-2026-0828 - Safetica Endpoint Client 权限提升 | ⚪ 高危 | 4 |
+| [CVE-2026-0828](CVE-2026-0828-KOSEC-LLC_BYOVD-Research.md) | CVE-2026-0828 - Windows操作系统 权限提升 | ⚪ 高危 | 4 |
+| [CVE-2026-0828](CVE-2026-0828-mein-0_cve-2026-0828.md) | CVE-2026-0828 - Safetica DLP 权限提升 | ⚪ 高危 | 4 |
+| [CVE-2026-0828](CVE-2026-0828-oxfemale_KillChain.md) | CVE-2026-0828 - ProcessMonitorDriver.sys 权限提升 | ⚪ 高危 | 4 |
 | [CVE-2026-1357](CVE-2026-1357-halilkirazkaya_CVE-2026-1357.md) | CVE-2026-1357 - WPvivid Backup & Migration 任意文件上传, 远程代码执行 (R... | 🔴 Critical | 1 |
 | [CVE-2026-1492](CVE-2026-1492-the8frust_CVE-2026-1492.md) | CVE-2026-1492 - WordPress User Registration & Membership Plu... | ⚪ 关键 | 1 |
 | [CVE-2026-1560](CVE-2026-1560-Z3YR0xX_CVE-2026-1560-Authenticated-Remote-Code-Execution-in-Lazy-Blocks-4.2.0.md) | CVE-2026-1560 - Custom Block Builder – Lazy Blocks WordPress... | 🟠 High | 1 |
@@ -75,29 +79,29 @@
 | [CVE-2026-24061](CVE-2026-24061-RStephanH_vuln-deb.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-Remnant-DB_CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-SeptembersEND_CVE--2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
-| [CVE-2026-24061](CVE-2026-24061-X-croot_CVE-2026-24061_POC.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 严重 | 39 |
-| [CVE-2026-24061](CVE-2026-24061-athack-ctf_chall2026-telneted.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-X-croot_CVE-2026-24061_POC.md) | CVE-2026-24061 - GNU Inetutils telnetd 认证绕过 | ⚪ 严重 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-athack-ctf_chall2026-telneted.md) | CVE-2026-24061 - GNU inetutils-telnetd 认证绕过 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-buzz075_CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-canpilayda_inetutils-telnetd-cve-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-cumakurt_tscan.md) | CVE-2026-24061 - GNU Inetutils telnetd 身份认证绕过 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-cyberpoul_CVE-2026-24061-POC.md) | CVE-2026-24061 - GNU InetUtils telnetd 远程认证绕过、特权升级、任意代码执行 | ⚪ 高危。攻击者可远程绕过认证 | 39 |
-| [CVE-2026-24061](CVE-2026-24061-dotelpenguin_telnetd_CVE-2026-24061_tester.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 / 环境变量注入 | ⚪ 高危 (Critical) | 39 |
-| [CVE-2026-24061](CVE-2026-24061-ekomsSavior_telnet_scan.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-dotelpenguin_telnetd_CVE-2026-24061_tester.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-ekomsSavior_telnet_scan.md) | CVE-2026-24061 - GNU inetutils-telnetd 认证绕过 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-franckferman_CVE_2026_24061_PoC.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过/环境注入/提权 (RCE) | ⚪ 非常高危 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-hilwa24_CVE-2026-24061.md) | CVE-2026-24061 - Telnet 服务 认证绕过 (Authentication Bypass) | ⚪ 高危 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-ibrahmsql_CVE-2026-24061-PoC.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
-| [CVE-2026-24061](CVE-2026-24061-killsystema_scan-cve-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 严重 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-killsystema_scan-cve-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-lavabyte_telnet-CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-madfxr_Twenty-Three-Scanner.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-mbanyamer_CVE-2026-24061-GNU-Inetutils-telnetd-Remote-Authentication-Bypass-Root-Shell-.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 严重 | 39 |
-| [CVE-2026-24061](CVE-2026-24061-midox008_CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-midox008_CVE-2026-24061.md) | CVE-2026-24061 - GNU Inetutils telnetd 认证绕过 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-nrnw_CVE-2026-24061-GNU-inetutils-Telnet-Detector.md) | CVE-2026-24061 - GNU InetUtils Telnetd 认证绕过 | ⚪ 严重高危 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-obrunolima1910_CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 远程认证绕过/提权 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-obrunolima1910_obrunolima1910.github.io.md) | CVE-2026-24061 - GNU InetUtils telnetd 远程认证绕过 / 参数注入 (Remote... | ⚪ 严重 (Critical) | 39 |
-| [CVE-2026-24061](CVE-2026-24061-przemytn_CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-przemytn_CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils套件的telnetd服务 认证绕过 | ⚪ 严重 | 39 |
 | [CVE-2026-24061](CVE-2026-24061-scumfrog_cve-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 严重 | 39 |
-| [CVE-2026-24061](CVE-2026-24061-setuju_telnetd.md) | CVE-2026-24061 - GNU Inetutils telnetd 认证绕过 | ⚪ 严重 | 39 |
-| [CVE-2026-24061](CVE-2026-24061-tiborscholtz_CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-setuju_telnetd.md) | CVE-2026-24061 - GNU InetUtils telnetd 认证绕过 | ⚪ 高危 | 39 |
+| [CVE-2026-24061](CVE-2026-24061-tiborscholtz_CVE-2026-24061.md) | CVE-2026-24061 - GNU InetUtils telnetd 身份验证绕过 | ⚪ 高危 | 39 |
 | [CVE-2026-2441](CVE-2026-2441-D3b0j33t_CVE-2026-2441-PoC.md) | CVE-2026-2441 - Google Chrome 释放后使用(UAF) | ⚪ 高危 | 7 |
 | [CVE-2026-2441](CVE-2026-2441-MartinaStarone_CVE-2026-2441.md) | CVE-2026-2441 - Google Chrome及基于Chromium的浏览器 释放后使用 | ⚪ 高危 | 7 |
 | [CVE-2026-2441](CVE-2026-2441-NetVanguard-cmd_CVE-2026-2441.md) | CVE-2026-2441 - Google Chrome Use-after-free (UAF), Remote C... | ⚪ 高危 (High) | 7 |
@@ -207,26 +211,27 @@
 | [CVE-2026-42945](CVE-2026-42945-tal7aouy_nginx-cve-2026-42945.md) | CVE-2026-42945 - NGINX Open Source, NGINX Plus 堆缓冲区溢出 | ⚪ 严重 | 29 |
 | [CVE-2026-42945](CVE-2026-42945-webdev75950-ux_nginx-rce-cve-2026-42945.md) | CVE-2026-42945 - NGINX 堆缓冲区溢出 | ⚪ 严重 | 29 |
 | [CVE-2026-42945](CVE-2026-42945-yusufdalbudak_CVE-2026-42945.md) | CVE-2026-42945 - NGINX 堆缓冲区溢出 | ⚪ 严重 | 29 |
-| [CVE-2026-43284](CVE-2026-43284-0xBlackash_CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-AK777177_Dirty-Frag-Analysis.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-Aiyakami_rust_dirtyfrag.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-AtlasVector_Dirty-Frag-CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-ChernStepanov_DirtyFrag-for-dummies.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-FrosterDL_CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-Koshmare-Blossom_DirtyFrag-go.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-LucasPDiniz_CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-XRSecCD_202605_dirty_frag.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-grabesec_XCP_ng_CVE-2026-43284_tester.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-haydenjames_dirty-frag-check.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-kuniyal08_Dirty-Frag-CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-liamromanis101_DirtyFrag-Detector.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-linnemanlabs_dirtyfrag-arm64.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-metalx1993_dirtyfrag-patches.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-mym0us3r_DIRTY-FRAG-Detection-with-Wazuh-4.14.4.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 严重 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-ryan2929_CVE-2026-43284-.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-suominen_CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-whosfault_CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
-| [CVE-2026-43284](CVE-2026-43284-xd20111_CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 20 |
+| [CVE-2026-43284](CVE-2026-43284-0xBlackash_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权漏洞 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-AK777177_Dirty-Frag-Analysis.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-Aiyakami_rust_dirtyfrag.md) | CVE-2026-31431 - Linux内核 权限提升 | ⚪ 严重 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-AtlasVector_Dirty-Frag-CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-ChernStepanov_DirtyFrag-for-dummies.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-FrosterDL_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-Koshmare-Blossom_DirtyFrag-go.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-LucasPDiniz_CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-XRSecCD_202605_dirty_frag.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-grabesec_XCP_ng_CVE-2026-43284_tester.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-haydenjames_dirty-frag-check.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-jayhutajulu1_CVE-2026-43284-DirtyFrag-PoC.md) | CVE-2026-43284 - Linux内核 本地特权提升(LPE) | ⚪ 严重 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-kuniyal08_Dirty-Frag-CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地提权 | ⚪ 严重 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-liamromanis101_DirtyFrag-Detector.md) | CVE-2026-43284 - Linux Kernel 本地提权 | ⚪ 严重 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-linnemanlabs_dirtyfrag-arm64.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-metalx1993_dirtyfrag-patches.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-mym0us3r_DIRTY-FRAG-Detection-with-Wazuh-4.14.4.md) | CVE-2026-43284 - Linux内核 本地提权漏洞 | ⚪ 严重 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-ryan2929_CVE-2026-43284-.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 严重 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-suominen_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-whosfault_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-xd20111_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
 | [CVE-2026-43494](CVE-2026-43494-0xBlackash_CVE-2026-43494.md) | CVE-2026-43494 - Linux内核 本地提权 | ⚪ 高危 | 3 |
 | [CVE-2026-43494](CVE-2026-43494-Koshmare-Blossom_PinTheft-go.md) | CVE-2026-43494 - Linux内核 本地提权 | ⚪ 严重 | 3 |
 | [CVE-2026-43494](CVE-2026-43494-jayhutajulu1_CVE-2026-43494-PinTheft-PoC.md) | CVE-2026-43494 - Linux内核 本地提权 | ⚪ 严重 | 3 |
