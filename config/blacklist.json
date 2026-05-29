@@ -1,7 +1,7 @@
 {
   "$schema": "blacklist-schema.json",
   "version": "1.0.1",
-  "last_updated": "2026-05-28T11:40:43.491717Z",
+  "last_updated": "2026-05-29T13:41:50.878297Z",
   "description": "VulnWatchdog 黑名单配置文件 - 已更新 2026 WebRAT 与 TeamPCP 供应链攻击投毒账号",
   "settings": {
     "auto_blacklist_enabled": true,
@@ -1850,6 +1850,26 @@
         "last_quality_score": 0,
         "last_poisoning_risk": 0,
         "notes": "自动拉黑 - 失败原因: POC质量过低: 0"
+      },
+      {
+        "username": "testaross4",
+        "reason": "POC质量持续过低(最近评分: 0/10)",
+        "added_date": "2026-05-29",
+        "added_by": "auto",
+        "fail_count": 1,
+        "last_quality_score": 0,
+        "last_poisoning_risk": 0,
+        "notes": "自动拉黑 - 失败原因: 影响应用未知, POC质量过低: 0"
+      },
+      {
+        "username": "kaleth4",
+        "reason": "POC质量持续过低(最近评分: 0/10)",
+        "added_date": "2026-05-29",
+        "added_by": "auto",
+        "fail_count": 1,
+        "last_quality_score": 0,
+        "last_poisoning_risk": 0,
+        "notes": "自动拉黑 - 失败原因: POC质量过低: 0, 有效性分析过短: 145 字符 (最少150字符)"
       }
     ],
     "repositories": [
@@ -1885,11 +1905,11 @@
     "repositories": []
   },
   "statistics": {
-    "total_blocked": 1676,
-    "blocked_by_author": 1675,
+    "total_blocked": 1705,
+    "blocked_by_author": 1704,
     "blocked_by_repository": 1,
     "blocked_by_cve": 0,
-    "auto_blacklisted_authors": 177,
+    "auto_blacklisted_authors": 179,
     "auto_blacklisted_repositories": 0
   }
 }
