@@ -1,6 +1,6 @@
 # 2026年 CVE漏洞列表
 
-> 📊 共收录 **265** 个CVE漏洞
+> 📊 共收录 **297** 个CVE漏洞
 
 ---
 
@@ -23,8 +23,8 @@
 | [CVE-2026-0073](CVE-2026-0073-thakur2309_CVE-2026-0073-ZERO-CLICK.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 高危 | 15 |
 | [CVE-2026-0073](CVE-2026-0073-unnaim_adbHijacker.md) | CVE-2026-0073 - Android 认证绕过 | ⚪ 严重 | 15 |
 | [CVE-2026-0073](CVE-2026-0073-xqi1337_poc-CVE-2026-0073.md) | CVE-2026-0073 - Android Debug Bridge (ADB) 认证绕过/远程代码执行 | ⚪ 严重 | 15 |
-| [CVE-2026-0257](CVE-2026-0257-akashsingh0454_CVE-2026-0257-PoC.md) | CVE-2026-0257 - Palo Alto Networks PAN-OS GlobalProtect 身份验证... | ⚪ 中危 | 2 |
-| [CVE-2026-0257](CVE-2026-0257-sfewer-r7_CVE-2026-0257.md) | CVE-2026-0257 - Palo Alto Networks PAN-OS® GlobalProtect por... | ⚪ 严重 | 2 |
+| [CVE-2026-0257](CVE-2026-0257-akashsingh0454_CVE-2026-0257-PoC.md) | CVE-2026-0257 - Palo Alto Networks PAN-OS GlobalProtect Port... | ⚪ 中危 | 2 |
+| [CVE-2026-0257](CVE-2026-0257-sfewer-r7_CVE-2026-0257.md) | CVE-2026-0257 - Palo Alto Networks PAN-OS GlobalProtect 认证绕过 | ⚪ 高危 | 2 |
 | [CVE-2026-0628](CVE-2026-0628-fevar54_CVE-2026-0628-POC.md) | CVE-2026-0628 - Google Chrome (WebView组件) 权限绕过/脚本注入 | ⚪ 高 (High) | 1 |
 | [CVE-2026-0770](CVE-2026-0770-affix_CVE-2026-0770-PoC.md) | CVE-2026-0770 - Langflow 远程代码执行 (RCE) | ⚪ 关键 (Critical) | 1 |
 | [CVE-2026-0828](CVE-2026-0828-DeathShotXD_0xKern3lCrush.md) | CVE-2026-0828 - Safetica Endpoint Client 权限提升 | ⚪ 高危 | 4 |
@@ -120,6 +120,25 @@
 | [CVE-2026-25643](CVE-2026-25643-DyniePro_CVE-2026-25643.md) | CVE-2026-25643 - Frigate NVR 远程代码执行 | ⚪ 严重 | 3 |
 | [CVE-2026-25643](CVE-2026-25643-jduardo2704_CVE-2026-25643-Frigate-RCE.md) | CVE-2026-25643 - Frigate NVR 远程代码执行 | ⚪ 严重 | 3 |
 | [CVE-2026-25643](CVE-2026-25643-joshuavanderpoll_CVE-2026-25643.md) | CVE-2026-25643 - Frigate NVR 远程代码执行 | ⚪ 严重 | 3 |
+| [CVE-2026-29000](CVE-2026-29000-0xW1LD_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 身份验证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-ClayOfGilgamesh_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 严重 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-Crims-on_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 身份验证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-Gajraj238_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 严重 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-PtechAmanja_CVE-2026-29000-pac4j-jwt-auth-bypass.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-RootX111_cve-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-alihussainzada_CVE-2026-29000-Python-PoC-pac4j-JWT-AuthenticationBypass-Poc.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-c0gnit00_CVE-2026-29000.md) | CVE-2026-29000 - pac4j JWT实现 认证绕过 | ⚪ 严重 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-cipher1x1_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt库 认证绕过 | ⚪ 严重 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-jake-young-dev_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 严重 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-kernelzeroday_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 身份验证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-ledksv_Principal-HackTheBox.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 严重 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-manbahadurthapa1248_CVE-2026-29000---pac4j-jwt-Authentication-Bypass-PoC.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-otuva_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-rootdirective-sec_CVE-2026-29000-Lab.md) | CVE-2026-29000 - pac4j-jwt 身份验证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-strikoder_CVE-2026-29000-pac4j-jwt.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 高危 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-tc4dy_CVE-2026-29000-PoC-Exploit.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 严重 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-yasirr10_CVE-2026-29000.md) | CVE-2026-29000 - pac4j-jwt 认证绕过 | ⚪ 严重 | 19 |
+| [CVE-2026-29000](CVE-2026-29000-zF-tm_CVE-2026-29000.md) | CVE-2026-29000 - Pac4j 认证绕过 | ⚪ 严重 | 19 |
 | [CVE-2026-2991](CVE-2026-2991-Jumpthereness578_CVE-2026-2991.md) | CVE-2026-2991 - KiviCare Clinic & Patient Management System ... | ⚪ 高危 | 2 |
 | [CVE-2026-2991](CVE-2026-2991-joshuavanderpoll_CVE-2026-2991.md) | CVE-2026-2991 - KiviCare Clinic & Patient Management System ... | ⚪ 高危 | 2 |
 | [CVE-2026-30862](CVE-2026-30862-drkim-dev_CVE-2026-30862.md) | CVE-2026-30862 - Appsmith 存储型跨站脚本(XSS), 权限提升, 跨站请求伪造(CSRF) | ⚪ 严重 (Critical) | 1 |
@@ -167,6 +186,17 @@
 | [CVE-2026-35616](CVE-2026-35616-keraattin_CVE-2026-35616.md) | CVE-2026-35616 - FortiClient EMS API认证绕过 | ⚪ 严重 | 7 |
 | [CVE-2026-35616](CVE-2026-35616-wa6n3r_CVE-2026-35616.md) | CVE-2026-35616 - FortiClientEMS 身份验证绕过和远程代码执行 | ⚪ 严重 | 7 |
 | [CVE-2026-36239](CVE-2026-36239-TazmiDev_CVE-2026-36239.md) | CVE-2026-36239 - PbootCMS 远程代码执行 | ⚪ 严重 | 1 |
+| [CVE-2026-39987](CVE-2026-39987-0xBlackash_CVE-2026-39987.md) | CVE-2026-39987 - Marimo 远程代码执行 | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-0xdeadroot_CVE-2026-39987-marimo-rce.md) | CVE-2026-39987 - Marimo 远程代码执行 | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-Dhiaelhak-Rached_CVE-2026-39987-lab-or-marimo-cve-lab.md) | CVE-2026-39987 - marimo 认证绕过→远程代码执行(RCE) | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-HORKimhab_CVE-2026-39987.md) | CVE-2026-39987 - marimo RCE | ⚪ 高危 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-M3PH1569_CVE-2026-39987-POC.md) | CVE-2026-39987 - Marimo 远程代码执行 | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-Nxploited_CVE-2026-39987.md) | CVE-2026-39987 - Marimo 远程代码执行 | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-fevar54_marimo_CVE-2026-39987_RCE_PoC.md) | CVE-2026-39987 - Marimo 远程代码执行 | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-h3raklez_CVE-2026-39987.md) | CVE-2026-39987 - Marimo 远程代码执行 | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-keraattin_CVE-2026-39987.md) | CVE-2026-39987 - Marimo Python notebook 远程代码执行 | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-mki9_CVE-2026-39987_exploit.md) | CVE-2026-39987 - Marimo 远程代码执行 | ⚪ 严重 | 11 |
+| [CVE-2026-39987](CVE-2026-39987-rootdirective-sec_CVE-2026-39987-Lab.md) | CVE-2026-39987 - marimo RCE | ⚪ 严重 | 11 |
 | [CVE-2026-41940](CVE-2026-41940-0xBlackash_CVE-2026-41940.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-44pie_cpsniper.md) | CVE-2026-41940 - cPanel和WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-Christian93111_CVE-2026-41940.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
@@ -198,6 +228,7 @@
 | [CVE-2026-41940](CVE-2026-41940-thekawix_CVE-2026-41940.md) | CVE-2026-41940 - cPanel和WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-willygailo_CVE-2026-41940-Linux.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-zycoder0day_CVE-2026-41940.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-42589](CVE-2026-42589-fineman999_POC_CVE-2026-42589.md) | CVE-2026-42589 - Gotenberg 远程代码执行 | ⚪ 严重 | 1 |
 | [CVE-2026-42880](CVE-2026-42880-HAERIN-L_POC_CVE-2026-42880.md) | CVE-2026-42880 - Argo CD 信息泄露 | ⚪ 严重 | 1 |
 | [CVE-2026-42945](CVE-2026-42945-0xBlackash_CVE-2026-42945.md) | CVE-2026-42945 - NGINX 堆缓冲区溢出 | ⚪ 严重 | 29 |
 | [CVE-2026-42945](CVE-2026-42945-BarAppTeam_nginx-cve-fix.md) | CVE-2026-42945 - NGINX 堆缓冲区溢出 | ⚪ 严重 | 29 |
@@ -259,6 +290,7 @@
 | [CVE-2026-48710](CVE-2026-48710-eris-ths_supply-chain-guard.md) | CVE-2026-31431 - Linux系统内核 本地权限提升 | ⚪ 严重 | 3 |
 | [CVE-2026-48710](CVE-2026-48710-xtremebeing_starlette-host-header-lab.md) | CVE-2025-48710 - kro (Kube Resource Orchestrator) 容器镜像注入 | ⚪ 高危 | 3 |
 | [CVE-2026-49009](CVE-2026-49009-j0xh-sec_CVE-2026-49009.md) | CVE-2026-31431 - Mender Server 路径遍历/远程代码执行 | ⚪ 严重 | 1 |
+| [CVE-2026-7392](CVE-2026-7392-microwaveabi_pharmacy-sqli-CVE-2026-7392.md) | CVE-2026-7392 - SourceCodester Pharmacy Sales and Inventory ... | ⚪ 中危 | 1 |
 | [CVE-2026-8832](CVE-2026-8832-funixone_EXPLOIT-CVE-2026-8832-.md) | CVE-2026-8832 - WordPress插件WPCode Lite (Insert Headers and F... | ⚪ 严重 | 1 |
 | [CVE-2026-9082](CVE-2026-9082-0xBlackash_CVE-2026-9082.md) | CVE-2026-9082 - Drupal Core SQL注入 | ⚪ 高危 | 9 |
 | [CVE-2026-9082](CVE-2026-9082-7h30th3r0n3_CVE-2026-9082-Drupal-PoC.md) | CVE-2026-9082 - Drupal Core SQL注入 | ⚪ 高危 | 9 |
@@ -284,4 +316,4 @@
 
 ---
 
-*最后更新: 2026-05-29*
+*最后更新: 2026-05-30*
