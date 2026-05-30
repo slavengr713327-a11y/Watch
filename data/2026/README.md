@@ -1,6 +1,6 @@
 # 2026年 CVE漏洞列表
 
-> 📊 共收录 **301** 个CVE漏洞
+> 📊 共收录 **302** 个CVE漏洞
 
 ---
 
@@ -142,36 +142,37 @@
 | [CVE-2026-2991](CVE-2026-2991-Jumpthereness578_CVE-2026-2991.md) | CVE-2026-2991 - KiviCare Clinic & Patient Management System ... | ⚪ 高危 | 2 |
 | [CVE-2026-2991](CVE-2026-2991-joshuavanderpoll_CVE-2026-2991.md) | CVE-2026-2991 - KiviCare Clinic & Patient Management System ... | ⚪ 高危 | 2 |
 | [CVE-2026-30862](CVE-2026-30862-drkim-dev_CVE-2026-30862.md) | CVE-2026-30862 - Appsmith 存储型跨站脚本(XSS), 权限提升, 跨站请求伪造(CSRF) | ⚪ 严重 (Critical) | 1 |
-| [CVE-2026-31431](CVE-2026-31431-4n4s4zi_copyfail-alpine.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-4xura_CVE-2026-31431-Copy-Fail.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-Dullpurple-sloop726_CVE-2026-31431-Linux-Copy-Fail.md) | CVE-2026-31431 - Linux内核 权限提升 | ⚪ 高危 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-GubiczaP_cve-2026-31431-checker.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-Helios973_CVE-2026-31431_exp.c.md) | CVE-2026-31431 - Linux Kernel 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-Iamliuxiaozhen_copy_fail.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-JimmyPughtron_CVE-2026-31431-Copy-Fail---Minified-LPE-PoC.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-John-Popovici_CVE-2026-31431-CopyFail-Linux-PrivEsc.md) | CVE-2026-31431 - Linux Kernel 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-Liverwortenuresis371_copyfail-rs.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-Yakovyakov_cve-2026-31431-mitigation.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-aexdyhaxor_CVE-2026-31431-copy-fail.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-cj667113_OCI-Ansible-Fix-CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权与容器逃逸 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-gbonacini_CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-krisiasty_vcheck.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-kuniyal08_Copy-Fail-CVE-2026-31431-Lab.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-ridhinva_copyfail-checker.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-ryan2929_CVE-2026-31431.md) | CVE-2026-31431 - Linux Kernel 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-samanzamani_copy-fail-checker.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-selectel_mks-copy-fail-mitigation.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-sgkdev_ptrace_may_dream.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-songzzzz_CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 高危 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-suominen_CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-tgies_copy-fail-c.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-vishvacyber_Detection-Tool-Kit-for-CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-vorkampfer_copyfail2_electric_boogaloo_fix.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-waltrone1_copyfail-safe-check.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-wh1sky02_copy-fail-python.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-wvverez_CVE-2026-31431-Copy-Fail.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-yangh-beep_CVE-2026-31431-C.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 30 |
-| [CVE-2026-31431](CVE-2026-31431-zKaaanon_ProyectoFinalSO.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 30 |
+| [CVE-2026-31431](CVE-2026-31431-4n4s4zi_copyfail-alpine.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-4xura_CVE-2026-31431-Copy-Fail.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-Dullpurple-sloop726_CVE-2026-31431-Linux-Copy-Fail.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-GubiczaP_cve-2026-31431-checker.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-Helios973_CVE-2026-31431_exp.c.md) | CVE-2026-31431 - Linux Kernel 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-Iamliuxiaozhen_copy_fail.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-JimmyPughtron_CVE-2026-31431-Copy-Fail---Minified-LPE-PoC.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-John-Popovici_CVE-2026-31431-CopyFail-Linux-PrivEsc.md) | CVE-2026-31431 - Linux Kernel 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-K3ysTr0K3R_CVE-2026-31431-EXPLOIT.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-Liverwortenuresis371_copyfail-rs.md) | CVE-2026-31431 - Linux内核 本地提权/容器逃逸 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-Yakovyakov_cve-2026-31431-mitigation.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-aexdyhaxor_CVE-2026-31431-copy-fail.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-cj667113_OCI-Ansible-Fix-CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权与容器逃逸 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-gbonacini_CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权/容器逃逸 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-krisiasty_vcheck.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-kuniyal08_Copy-Fail-CVE-2026-31431-Lab.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-ridhinva_copyfail-checker.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-ryan2929_CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-samanzamani_copy-fail-checker.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-selectel_mks-copy-fail-mitigation.md) | CVE-2026-31431 - Linux内核 本地提权/容器逃逸 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-sgkdev_ptrace_may_dream.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-songzzzz_CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-suominen_CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-tgies_copy-fail-c.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-vishvacyber_Detection-Tool-Kit-for-CVE-2026-31431.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-vorkampfer_copyfail2_electric_boogaloo_fix.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-waltrone1_copyfail-safe-check.md) | CVE-2026-31431 - Linux Kernel 本地提权/容器逃逸 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-wh1sky02_copy-fail-python.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-wvverez_CVE-2026-31431-Copy-Fail.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-yangh-beep_CVE-2026-31431-C.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 31 |
+| [CVE-2026-31431](CVE-2026-31431-zKaaanon_ProyectoFinalSO.md) | CVE-2026-31431 - Linux内核 本地提权 | ⚪ 严重 | 31 |
 | [CVE-2026-31802](CVE-2026-31802-Jvr2022_CVE-2026-31802.md) | CVE-2026-31802 - npm tar包(node-tar) 路径遍历/任意文件覆盖 | ⚪ 高危 | 3 |
 | [CVE-2026-31802](CVE-2026-31802-Recorded-texteditor120_CVE-2026-31802.md) | CVE-2026-31802 - npm tar包 路径遍历 | ⚪ 高危 | 3 |
 | [CVE-2026-31802](CVE-2026-31802-ridhinva_npm-tar-traversal-scanner.md) | CVE-2026-31802 - npm tar包 路径遍历 | ⚪ 高危 | 3 |
@@ -197,36 +198,36 @@
 | [CVE-2026-39987](CVE-2026-39987-keraattin_CVE-2026-39987.md) | CVE-2026-39987 - Marimo Python notebook 远程代码执行 | ⚪ 严重 | 11 |
 | [CVE-2026-39987](CVE-2026-39987-mki9_CVE-2026-39987_exploit.md) | CVE-2026-39987 - Marimo 远程代码执行 | ⚪ 严重 | 11 |
 | [CVE-2026-39987](CVE-2026-39987-rootdirective-sec_CVE-2026-39987-Lab.md) | CVE-2026-39987 - marimo RCE | ⚪ 严重 | 11 |
-| [CVE-2026-41940](CVE-2026-41940-0xBlackash_CVE-2026-41940.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-0xBlackash_CVE-2026-41940.md) | CVE-2026-41940 - cPanel & WHM 身份认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-44pie_cpsniper.md) | CVE-2026-41940 - cPanel和WHM 认证绕过 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-Christian93111_CVE-2026-41940.md) | CVE-2026-41940 - cPanel&WHM 认证绕过 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-Defacto-ridgepole254_CVE-2026-41940-Exploit-PoC.md) | CVE-2026-41940 - cPanel&WHM 认证绕过 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-Jenderal92_CVE-2026-41940.md) | CVE-2026-41940 - 抖音 认证绕过 | ⚪ 高危 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-MrOplus_CVE-2026-41940.md) | CVE-2026-41940 - cPanel和WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-Christian93111_CVE-2026-41940.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-Defacto-ridgepole254_CVE-2026-41940-Exploit-PoC.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-Jenderal92_CVE-2026-41940.md) | CVE-2026-41940 - cPanel和WHM 身份验证绕过 | ⚪ 高危 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-MrOplus_CVE-2026-41940.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-OhmGun_whmxploit---CVE-2026-41940.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-Richflexpix_cpanel-pwn.md) | CVE-2026-41940 - cPanel/WHM CRLF注入 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-SreejaPuthan_cpanel-control-plane-exposure-check.md) | CVE-2026-41940 - cPanel和WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-Richflexpix_cpanel-pwn.md) | CVE-2026-41940 - cPanel/WHM CRLF注入→认证绕过→RCE | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-SreejaPuthan_cpanel-control-plane-exposure-check.md) | CVE-2026-41940 - cPanel, WHM, Webmail 控制平面暴露 | ⚪ 高危 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-Underh0st_CPanel-Audit-Remediation-Tool.md) | CVE-2026-41940 - Multi-Audit & Patch Tool 会话伪造 | ⚪ 高危 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-Unfold-Security_CVE-2026-41940-Detection.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 高危 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-ZildanZ_CVE-2026-41940.md) | CVE-2026-41940 - 未知产品 认证绕过 | ⚪ 高危 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-ZildanZ_CVE-2026-41940.md) | CVE-2026-41940 - cPanel&WHM 身份认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-acuciureanu_cpanel2shell-honeypot.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 高危 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-anach-ai_CVE-2026-41940.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-assetnote_cpanel2shell-scanner.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 高危 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-branixsolutions_Security-CVE-2026-41940-cPanel-WHM-WP2.md) | CVE-2026-41940 - cPanel和WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-assetnote_cpanel2shell-scanner.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-branixsolutions_Security-CVE-2026-41940-cPanel-WHM-WP2.md) | CVE-2026-31431 - Linux内核 本地权限提升 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-bughunt4me_cpanelCVE-2026-41940.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-cy3erm_CVE-2026-41940-POC.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-habibkaratas_sorry-ransomware-analysis.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-iSee857_cPanel-WHM-CVE-2026-41940-AuthBypass.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-itsismarcos_CVE-2026-41940.md) | CVE-2026-41940 - cPanel 认证绕过 | ⚪ 高危 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-murrez_CVE-2026-41940.md) | CVE-2026-41940 - cPanel 认证绕过 | ⚪ 高危 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-ngksiva_cpanel-forensics.md) | CVE-2026-41940 - cPanel/WHM 权限提升 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-murrez_CVE-2026-41940.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-ngksiva_cpanel-forensics.md) | CVE-2026-41940 - cPanel/WHM 身份验证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-nickpaulsec_2026-41940-poc.md) | CVE-2026-41940 - cPanel&WHM 身份认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-rfxn_cpanel-sessionscribe.md) | CVE-2026-41940 - cPanel&WHM 认证绕过 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-sardine-web_Automated-scanner-CVE-2026-41940.md) | CVE-2026-41940 - cPanel和WHM CRLF注入 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-sercanokur_CVE-2026-41940-cPanel-WHM-Verification-Tool.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-sardine-web_Automated-scanner-CVE-2026-41940.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-sercanokur_CVE-2026-41940-cPanel-WHM-Verification-Tool.md) | CVE-2026-41940 - cPanel & WHM, including DNSOnly; WP Squared... | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-tc4dy_CVE-2026-41940-POC-Exploit.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-thekawix_CVE-2026-41940.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
-| [CVE-2026-41940](CVE-2026-41940-willygailo_CVE-2026-41940-Linux.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
+| [CVE-2026-41940](CVE-2026-41940-willygailo_CVE-2026-41940-Linux.md) | CVE-2026-41940 - cPanel/WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-41940](CVE-2026-41940-zycoder0day_CVE-2026-41940.md) | CVE-2026-41940 - cPanel & WHM 认证绕过 | ⚪ 严重 | 31 |
 | [CVE-2026-42589](CVE-2026-42589-fineman999_POC_CVE-2026-42589.md) | CVE-2026-42589 - Gotenberg 远程代码执行 | ⚪ 严重 | 1 |
 | [CVE-2026-42880](CVE-2026-42880-HAERIN-L_POC_CVE-2026-42880.md) | CVE-2026-42880 - Argo CD 信息泄露 | ⚪ 严重 | 1 |
@@ -305,7 +306,7 @@
 | [CVE-2026-9082](CVE-2026-9082-thinhap_CVE-2026-9082-PoC.md) | CVE-2026-9082 - Drupal Core SQL注入 | ⚪ 高危 | 9 |
 | [CVE-2026-9082](CVE-2026-9082-ywh-jfellus_CVE-2026-9082.md) | CVE-2026-9082 - Drupal Core SQL注入 | ⚪ 高危 | 9 |
 | [CVE-2026-9256](CVE-2026-9256-3nou9h_CVE-2026-9256-Poc.md) | CVE-2026-9256 - NGINX 堆缓冲区溢出 | ⚪ 高危 | 3 |
-| [CVE-2026-9256](CVE-2026-9256-W5M1n9_NGINX-ngx_http_rewrite_module-heap-buffer-overflow-CVE-2026-9256.md) | CVE-2026-9256 - NGINX ngx_http_rewrite_module 堆缓冲区溢出 | ⚪ 高危 | 3 |
+| [CVE-2026-9256](CVE-2026-9256-W5M1n9_NGINX-ngx_http_rewrite_module-heap-buffer-overflow-CVE-2026-9256.md) | CVE-2026-9256 - NGINX 堆缓冲区溢出 | ⚪ 高危 | 3 |
 | [CVE-2026-9256](CVE-2026-9256-suominen_CVE-2026-9256.md) | CVE-2026-9256 - NGINX 堆缓冲区溢出 | ⚪ 高危 | 3 |
 | [CVE-2026-9789](CVE-2026-9789-ugvxb_CVE-2026-9789.md) | CVE-2026-9789 - Acer NitroSense软件(PSAdminAgent.exe) 本地权限提升 | ⚪ 严重 | 1 |
 | [CVE-2026-99999](CVE-2026-99999-24520597-blip_CVE-2026-999999.md) | CVE-2026-XBEN-001 - X-Trading Portal v1.4.2 服务器端模板注入(SSTI) | ⚪ 严重 | 1 |
