@@ -1,6 +1,6 @@
 # 2026年 CVE漏洞列表
 
-> 📊 共收录 **302** 个CVE漏洞
+> 📊 共收录 **304** 个CVE漏洞
 
 ---
 
@@ -260,27 +260,29 @@
 | [CVE-2026-42945](CVE-2026-42945-tal7aouy_nginx-cve-2026-42945.md) | CVE-2026-42945 - NGINX Open Source, NGINX Plus 堆缓冲区溢出 | ⚪ 严重 | 29 |
 | [CVE-2026-42945](CVE-2026-42945-webdev75950-ux_nginx-rce-cve-2026-42945.md) | CVE-2026-42945 - NGINX 堆缓冲区溢出 | ⚪ 严重 | 29 |
 | [CVE-2026-42945](CVE-2026-42945-yusufdalbudak_CVE-2026-42945.md) | CVE-2026-42945 - NGINX 堆缓冲区溢出 | ⚪ 严重 | 29 |
-| [CVE-2026-43284](CVE-2026-43284-0xBlackash_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权漏洞 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-AK777177_Dirty-Frag-Analysis.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-Aiyakami_rust_dirtyfrag.md) | CVE-2026-31431 - Linux内核 权限提升 | ⚪ 严重 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-AtlasVector_Dirty-Frag-CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-ChernStepanov_DirtyFrag-for-dummies.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-FrosterDL_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-Koshmare-Blossom_DirtyFrag-go.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-LucasPDiniz_CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地权限提升 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-XRSecCD_202605_dirty_frag.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-grabesec_XCP_ng_CVE-2026-43284_tester.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-haydenjames_dirty-frag-check.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-jayhutajulu1_CVE-2026-43284-DirtyFrag-PoC.md) | CVE-2026-43284 - Linux内核 本地特权提升(LPE) | ⚪ 严重 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-kuniyal08_Dirty-Frag-CVE-2026-43284.md) | CVE-2026-43284 - Linux Kernel 本地提权 | ⚪ 严重 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-liamromanis101_DirtyFrag-Detector.md) | CVE-2026-43284 - Linux Kernel 本地提权 | ⚪ 严重 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-linnemanlabs_dirtyfrag-arm64.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-metalx1993_dirtyfrag-patches.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-mym0us3r_DIRTY-FRAG-Detection-with-Wazuh-4.14.4.md) | CVE-2026-43284 - Linux内核 本地提权漏洞 | ⚪ 严重 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-ryan2929_CVE-2026-43284-.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 严重 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-suominen_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-whosfault_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
-| [CVE-2026-43284](CVE-2026-43284-xd20111_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 21 |
+| [CVE-2026-43284](CVE-2026-43284-0xBlackash_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-AK777177_Dirty-Frag-Analysis.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-Aiyakami_rust_dirtyfrag.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-AtlasVector_Dirty-Frag-CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 高危 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-ChernStepanov_DirtyFrag-for-dummies.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-DylanClaudio_Reporte-de-Escalada-de-Privilegios-Local-Dirty-Frag.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 高危 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-FrosterDL_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-K3ysTr0K3R_CVE-2026-43284-CVE-2026-43500-EXPLOIT.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-Koshmare-Blossom_DirtyFrag-go.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-LucasPDiniz_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-XRSecCD_202605_dirty_frag.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-grabesec_XCP_ng_CVE-2026-43284_tester.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-haydenjames_dirty-frag-check.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-jayhutajulu1_CVE-2026-43284-DirtyFrag-PoC.md) | CVE-2026-43284 - Linux内核 本地权限提升(LPE) | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-kuniyal08_Dirty-Frag-CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-liamromanis101_DirtyFrag-Detector.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-linnemanlabs_dirtyfrag-arm64.md) | CVE-2026-43284 - Linux内核 本地提权 | ⚪ 高危 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-metalx1993_dirtyfrag-patches.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-mym0us3r_DIRTY-FRAG-Detection-with-Wazuh-4.14.4.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-ryan2929_CVE-2026-43284-.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-suominen_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 本地权限提升 | ⚪ 高危 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-whosfault_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
+| [CVE-2026-43284](CVE-2026-43284-xd20111_CVE-2026-43284.md) | CVE-2026-43284 - Linux内核 权限提升 | ⚪ 严重 | 23 |
 | [CVE-2026-43494](CVE-2026-43494-0xBlackash_CVE-2026-43494.md) | CVE-2026-43494 - Linux内核 本地提权 | ⚪ 高危 | 4 |
 | [CVE-2026-43494](CVE-2026-43494-Koshmare-Blossom_PinTheft-asm.md) | CVE-2026-43494 - Linux Kernel 本地权限提升 | ⚪ 高危 | 4 |
 | [CVE-2026-43494](CVE-2026-43494-Koshmare-Blossom_PinTheft-go.md) | CVE-2026-43494 - Linux Kernel 本地提权 | ⚪ 高危 | 4 |
@@ -293,8 +295,8 @@
 | [CVE-2026-48710](CVE-2026-48710-xtremebeing_starlette-host-header-lab.md) | CVE-2025-48710 - kro (Kube Resource Orchestrator) 容器镜像注入 | ⚪ 高危 | 3 |
 | [CVE-2026-49009](CVE-2026-49009-j0xh-sec_CVE-2026-49009.md) | CVE-2026-31431 - Mender Server 路径遍历/远程代码执行 | ⚪ 严重 | 1 |
 | [CVE-2026-7392](CVE-2026-7392-microwaveabi_pharmacy-sqli-CVE-2026-7392.md) | CVE-2026-7392 - SourceCodester Pharmacy Sales and Inventory ... | ⚪ 中危 | 1 |
-| [CVE-2026-8732](CVE-2026-8732-Jenderal92_CVE-2026-8732.md) | CVE-2026-8732 - Microsoft Edge浏览器 权限提升 | ⚪ 中危 | 2 |
-| [CVE-2026-8732](CVE-2026-8732-xShadow-Here_CVE-2026-8732.md) | CVE-2026-8732 - WP Maps Pro (wp-google-map-gold) 权限提升 | ⚪ 严重 | 2 |
+| [CVE-2026-8732](CVE-2026-8732-Jenderal92_CVE-2026-8732.md) | CVE-2026-8732 - WordPress 权限提升 | ⚪ 高危 | 2 |
+| [CVE-2026-8732](CVE-2026-8732-xShadow-Here_CVE-2026-8732.md) | CVE-2026-8732 - WP Maps Pro (wp-google-map-gold) 未授权权限提升 | ⚪ 严重 | 2 |
 | [CVE-2026-8832](CVE-2026-8832-funixone_EXPLOIT-CVE-2026-8832-.md) | CVE-2026-8832 - WordPress插件WPCode Lite (Insert Headers and F... | ⚪ 严重 | 1 |
 | [CVE-2026-9082](CVE-2026-9082-0xBlackash_CVE-2026-9082.md) | CVE-2026-9082 - Drupal Core SQL注入 | ⚪ 高危 | 9 |
 | [CVE-2026-9082](CVE-2026-9082-7h30th3r0n3_CVE-2026-9082-Drupal-PoC.md) | CVE-2026-9082 - Drupal Core SQL注入 | ⚪ 高危 | 9 |

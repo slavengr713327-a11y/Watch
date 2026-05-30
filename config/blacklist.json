@@ -1,7 +1,7 @@
 {
   "$schema": "blacklist-schema.json",
   "version": "1.0.1",
-  "last_updated": "2026-05-30T12:55:16.489221Z",
+  "last_updated": "2026-05-30T21:37:57.349281Z",
   "description": "VulnWatchdog 黑名单配置文件 - 已更新 2026 WebRAT 与 TeamPCP 供应链攻击投毒账号",
   "settings": {
     "auto_blacklist_enabled": true,
@@ -1940,6 +1940,36 @@
         "last_quality_score": 0,
         "last_poisoning_risk": 0,
         "notes": "自动拉黑 - 失败原因: 影响应用未知, POC质量过低: 0, 有效性分析过短: 0 字符 (最少150字符)"
+      },
+      {
+        "username": "Marwan651",
+        "reason": "POC质量持续过低(最近评分: 0/10)",
+        "added_date": "2026-05-30",
+        "added_by": "auto",
+        "fail_count": 1,
+        "last_quality_score": 0,
+        "last_poisoning_risk": 0,
+        "notes": "自动拉黑 - 失败原因: 影响应用未知, POC质量过低: 0, 有效性分析过短: 0 字符 (最少150字符)"
+      },
+      {
+        "username": "Ly0kha",
+        "reason": "POC质量持续过低(最近评分: 0/10)",
+        "added_date": "2026-05-30",
+        "added_by": "auto",
+        "fail_count": 1,
+        "last_quality_score": 0,
+        "last_poisoning_risk": 0,
+        "notes": "自动拉黑 - 失败原因: 影响应用未知, POC质量过低: 0, 有效性分析过短: 53 字符 (最少150字符)"
+      },
+      {
+        "username": "YouGina",
+        "reason": "POC质量持续过低(最近评分: 0/10)",
+        "added_date": "2026-05-30",
+        "added_by": "auto",
+        "fail_count": 1,
+        "last_quality_score": 0,
+        "last_poisoning_risk": 0,
+        "notes": "自动拉黑 - 失败原因: 影响应用未知, POC质量过低: 0"
       }
     ],
     "repositories": [
@@ -1975,11 +2005,11 @@
     "repositories": []
   },
   "statistics": {
-    "total_blocked": 1771,
-    "blocked_by_author": 1770,
+    "total_blocked": 1829,
+    "blocked_by_author": 1828,
     "blocked_by_repository": 1,
     "blocked_by_cve": 0,
-    "auto_blacklisted_authors": 186,
+    "auto_blacklisted_authors": 189,
     "auto_blacklisted_repositories": 0
   }
 }
